@@ -1,0 +1,28 @@
+filename = 'notes.txt'
+
+while True:
+    print('1. Enter text to write to file:')
+    print('2. Read text from file')
+    print('3. Exit')
+
+    choice = input('Enter your choice (1/2/3): ')
+
+    with open(filename, "a+") as file:
+
+        if choice == '1':
+            text = input('Enter text to write to file: ')
+            file.write(text + '\n')
+            print('Text written to file.')
+
+        elif choice == '2':
+            file.seek(0)  
+            content = file.read()
+            print('Content of the file:')
+            print(content)
+
+        elif choice == '3':
+            print('Exiting the program.')
+            break
+
+        else:
+            print('Invalid choice. Please enter 1, 2, or 3.')
