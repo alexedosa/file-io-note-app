@@ -2,7 +2,8 @@ Notes Manager 📝
 
 A small Python program to write and read text from a file.
 
-How to Use
+How to Use - 
+
 	1.	Run the program:
 
 python notes_manager.py
